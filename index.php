@@ -13,7 +13,7 @@
     <?php 
 
     //Spoiler: don't do this at home!
-    $dbobj = mysql_connect('localhost', 'test', 'test');
+    $dbobj = mysql_connect('192.168.33.30', 'test', 'test');
     if (!$dbobj) { die('No se puede conectar: ' . mysql_error()); }
 
     $result = mysql_query("SHOW DATABASES");
